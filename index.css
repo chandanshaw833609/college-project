@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color:purple;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    display: flex;
+    padding-left: 5px;
+}
+nav ul li{
+    list-style: none;
+    padding-right: 30px;
+    padding-left: 0px;
+    height: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+    padding: 10px;
+}
+
+nav div{
+    padding-top: 0px;
+    display: flex;
+}
+nav div i{
+    color: white;
+    font-size: large;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+nav div h6{
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+.main{
+    background-color: black;
+    height: 100vh;
+}
+
+img{
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    opacity: .5;
+}
+.signin{
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    width: 300px;
+    opacity: .7;
+}
+
+.heading{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.heading h1{
+    color: white;
+    font-weight: 900;
+}
+
+.heading h1 span{
+    color: purple;
+    font-weight: 900;
+}
+tr{
+    margin-top: 10px;
+    align-items: center;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+td{
+    text-align: center;
+    padding: 5px;
+}
+
+table input{
+    width: 200px;
+    text-align: center;
+    margin-left: 22px;
+}
+
+.btn-color{
+    color: white;
+    background-color: purple;
+    font-weight: 600;
+    font-size: large;
+    align-items: center;
+    margin-left: 85px;
+    padding: 0;
+}
+.btn-color a:hover{
+    color: purple;
+    background-color: white;
+}
+.color{
+    color: purple;
+}
+

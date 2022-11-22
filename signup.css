@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.top-nav h3{
+    font-weight: 900;
+    padding-top: 4px;
+    color: purple;
+}
+.top-nav input{
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: 3px solid purple;
+    padding: 2px;
+}
+nav{
+    background-color:purple;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    display: flex;
+    padding-left: 5px;
+}
+nav ul li{
+    list-style: none;
+    padding-right: 30px;
+    padding-left: 0px;
+    height: 50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+}
+
+nav ul li a:hover{
+    background-color: white;
+    color: purple;
+    padding: 10px;
+}
+nav div{
+    padding-top: 0px;
+    display: flex;
+}
+nav div i{
+    color: white;
+    font-size: large;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+nav div h6{
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.signup{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    width: 300px;
+}
+
+table {
+    border-collapse: separate;
+}
+
+tr{
+    margin-top: 10px;
+    align-items: center;
+}
+
+td{
+    text-align: center;
+    padding: 5px;
+}
+
+table input{
+    width: 200px;
+    text-align: center;
+    margin-left: 22px;
+}
+  
+main h1{
+    color: purple;
+}
+
+.btn-color{
+    color: white;
+    background-color: purple;
+    font-weight: 600;
+    font-size: large;
+    align-items: center;
+    margin-left: 90px;
+}
+
+.btn-color:hover{
+    background-color: white;
+    color: purple;
+}
+
+.color{
+    color: purple;
+}
+
+/* main{
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    object-fit: center;
+    opacity: .8;
+} */
+.main{
+    background-color: black;
+    height: 100vh;
+}
+
+img{
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    opacity: .5;
+}
