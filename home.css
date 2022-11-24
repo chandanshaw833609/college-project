@@ -4,173 +4,105 @@
     box-sizing: border-box;
 }
 
-nav{
-    height: 50px;
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    position: absolute;
-    top: 0px;
-}
-.top-nav h3{
-    font-weight: 700;
-    color: white;
-    padding-right: 320px;
-    padding-left: 15px;
+.purple{
+    font-family: 'Rubik Distressed', cursive;
+    color: purple;
 }
 
-nav ul{
-    display: flex;
-    padding-left: 5px;
-    font-weight: 700;
-    
-}
-nav ul li{
-    list-style: none;
-    padding-right: 30px;
-    height: 50px;
-    padding-top: 6px;
+/* navbar star here */
+
+.navbar-color{
+    background-color: purple;
 }
 
-nav ul li a{
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    font-weight: 900px;
-}
-nav div{
-    padding-top: 0px;
-    display: flex;
-}
-span{
-    margin-left: 320px;
-    color: white;
-}
-span i{
-    padding-left: 10px;
-    color: white;
-}
+/* navbar end here */
+
+
+/* eaters start here */
 
 .eaters{
     font-size: 80px;
     position: absolute;
     left: 35%;
-    top: 90%;
-    color: purple;
+    top: 10%;
+    color:rgb(173, 33, 157);
     font-weight: 900;
-    opacity: 1;
     margin-top: 50px;
-    background-color: white;
     border-radius: 15px;
     padding-left: 20px;
     padding-right: 20px;
     font-family: 'Rubik Distressed', cursive;
 }
-.user h6{
-    color: white;
-    font-size: large;
-    padding-top: 5px;
-    padding-right: 10px;
-    margin-right: 0px;
-    border: 2px solid black;
-}
-nav div h6{
-    color: white;
-    padding-left: 10px;
-    padding-top: 5px;
-    margin-right: 200px;
-}
 
-.main{
-    background-color: black;
-    height: 50vh;
-    margin-bottom: 20px;
-}
+/* eaters end here */
 
-.main>img{
+
+/* background-image start here */
+
+.background-image::before{
+    content: "";
+    background-image: url('https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
     object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(50%);
     height: 50vh;
     width: 100%;
-    opacity: .5;
-}
-tr{
-    margin-top: 10px;
-    align-items: center;
-}
-table {
-    border-collapse: separate;
-    border-spacing: 0 15px;
-}
-td{
-    text-align: center;
-    padding: 5px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: -1;
+} 
+.background-image{
+    height: 50vh;
+    margin-bottom: 20px;
 }
 
-table input{
-    width: 200px;
-    text-align: center;
-    margin-left: 22px;
-}
-  
-main h1{
-    color: purple;
-}
-main p a{
-    text-decoration: none;
-    color: white;
-}
-.btn-color{
-    color: white;
-    background-color: purple;
-    font-weight: 600;
-    font-size: large;
-    align-items: center;
-    margin-left: 90px;
-}
-.btn-color:hover{
-    background-color: white;
-    color: purple;
-    border: 3px solid purple;
-}
-.color{
-    color: purple;
-}
+/* background-image end here */
 
-/*first-order start here */
 
-.first-order{
-    display: flex;
-    justify-content: space-evenly;
+
+/*first-orders start here */
+
+.first-orders{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
     padding: 20px;
     background-color: lightgrey;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
-.order{
-    height: 170px;
+.first-order{
+    height: 190px;
+    padding-top: 10px;
+    justify-self: center;
+    padding-bottom: 10px;
+
 }
 
-.order>img{
+.first-order>img{
     object-fit: cover;
     height: 150px;
     width: 150px;
     border-radius: 50%;
 }
-/* firs-order end here */
+/* firs-orders end here */
+
 
 /* brands start here */
 
 .brands{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
     background-color: lightgray;
-    margin-top: 20px;
     padding: 20px;
 }
 
 .brand{
     height: 190px;
     padding-top: 10px;
+    justify-self: center;
 }
 .brand>img{
     height: 150px;
@@ -180,33 +112,87 @@ main p a{
 }
 /* brands ends here */
 
-.purple{
-    font-family: 'Rubik Distressed', cursive;
-    color: purple;
-}
 
 /* returants start here */
 
-.resturants{
+.restaurants{
     display: grid;
-    grid-template-columns: 350px 350px 350px;
-    grid-template-rows: 250px  250px;
-    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 35px;
     justify-content: space-evenly;
     margin-bottom: 0px;
-    margin-top: 20px;
+    padding: 30px;
 }
 
-.resturant{
-    height: 250px;
-    box-shadow: 5px 5px 5px lightslategray;
+.restaurant{
+    box-shadow: 5px 5px 50px purple;
     border-radius: 10px;
 }
 
-.resturant>img{
-    height: 220px;
-    width: 350px;
+.restaurant>img{
+    width: 100%;
+    height: 80%;
     object-fit: cover;
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /* returants ends here */
+
+@media (max-width:400px) {
+    .restaurants{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .restaurant p{
+        margin-top: 10px;
+    }
+
+    .brands{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        background-color: lightgray;
+        padding: 20px;
+    }
+
+    .first-orders{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        background-color: lightgrey;
+        padding: 20px;
+    }
+    
+    .eaters{
+        font-size: 50px;
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        color:rgb(173, 33, 157);
+        font-weight: 900;
+        font-family: 'Rubik Distressed', cursive;
+    }
+    
+    .background-image::before{
+        content: "";
+        background-image: url('https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: brightness(50%);
+        height: 30vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    } 
+    .background-image{
+        height: 30vh;
+    }
+
+}
