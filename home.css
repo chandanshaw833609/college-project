@@ -140,7 +140,7 @@
 }
 /* returants ends here */
 
-@media (max-width:400px) {
+@media (max-width:500px) {
     .restaurants{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
