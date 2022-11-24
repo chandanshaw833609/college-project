@@ -186,10 +186,6 @@
         filter: brightness(50%);
         height: 30vh;
         width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
     } 
     .background-image{
         height: 30vh;
