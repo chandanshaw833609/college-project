@@ -15,6 +15,10 @@
     background-color: purple;
 }
 
+.navbar{
+    z-index: 2;
+}
+
 /* navbar end here */
 
 
@@ -143,8 +147,8 @@
 
 @media (max-width:500px) {
     .restaurants{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
     }
 
     .restaurant p{
@@ -153,16 +157,35 @@
 
     .brands{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         background-color: lightgray;
         padding: 20px;
     }
 
+    .brand>img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .brand{
+        height: 150px;
+        padding-top: 10px;
+        justify-self: center;
+    }
+
+    .first-order{
+        height: 150px;
+        padding-top: 10px;
+        justify-self: center;
+    }
+
     .first-orders{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         background-color: lightgrey;
         padding: 20px;
     }
@@ -171,7 +194,7 @@
         font-size: 60px;
         position: absolute;
         top: 7%;
-        left: 12%;
+        left: 14%;
         color:rgb(173, 33, 157);
         font-weight: 900;
         font-family: 'Rubik Distressed', cursive;
@@ -199,5 +222,12 @@
         background-size: cover;
         object-fit: cover;
         margin-bottom: 20px;
+    }
+
+    .first-order>img{
+        object-fit: cover;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
     }
 }
